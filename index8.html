@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo Programavimas</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p, ol li {
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: #2600FD;
+            color: #fff;
+            height: 60px;
+        }
+
+        header .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 990px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        
+
+        header ul {
+            list-style: none;
+        }
+
+        header li {
+            display: inline;
+            margin: 0px 3px;
+            padding: 0 5px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .light-blue {
+            background: #00FFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 60px);
+        }
+
+        .columns-row{
+            display: flex;
+            max-width: 990px;
+            margin: 20px auto;
+        }
+
+        .columns-row .col {
+            border: 1px solid #E2E2E2;
+            margin: 0 10px;
+        }
+
+        .columns-row .col .green-bg-sq{
+            background-color: green;
+            height: 150px;
+        }
+
+        .column-info {
+            padding: 20px;
+        }
+
+        .yellow {
+            background-color: #FDFF00;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+        }
+
+        .yellow .container{
+            max-width: 990px;
+            margin: auto;
+        }
+        
+        footer {
+            background-color: red;
+        }
+
+        footer .container .row{
+            display: flex;
+            max-width: 990px;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        footer .container .col {
+            flex:1;
+            padding: 0 10px;
+        }
+
+        footer .container .col:nth-child(1) p{
+            text-align: center;
+        }
+        footer .container .col:nth-child(2) ol{
+            margin-left: 35px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <span class="">LOGO</span>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="light-blue">
+            <div class="container">
+                <div class="row">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row columns-row">
+                    <div class="col">
+                        <div class="green-bg-sq"></div>
+                        <div class="column-info">
+                            <h2>Lorem</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col">
+                        <div class="green-bg-sq"></div>
+                        <div class="column-info">
+                            <h2>Lorem</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="green-bg-sq"></div>
+                        <div class="column-info">
+                            <h2>Lorem</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="yellow">
+            <div class="container">
+                <div class="row">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Lorem ipsum dolor sit ament.</h2>
+                        <p>Lorem ipsum dolor sit ament.</p>
+                        <p>Lorem ipsum dolor sit ament.</p>
+                        <p>Lorem ipsum dolor sit ament.</p>
+                        <p>Lorem ipsum dolor sit ament.</p>
+                        <p>Lorem ipsum dolor sit ament.</p>
+                    </div>
+                    <div class="col">
+                        <h2>Lorem ipsum dolor sit ament.</h2>
+                        <ol>
+                            <li>Lorem ipsum dolor sit ament.</li>
+                            <li>Lorem ipsum dolor sit ament.</li>
+                            <li>Lorem ipsum dolor sit ament.</li>
+                            <li>Lorem ipsum dolor sit ament.</li>
+                            <li>Lorem ipsum dolor sit ament.</li>
+                        </ol>
+                    </div>
+                    <div class="col">
+                        <h2>Lorem ipsum dolor sit ament.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                    </div>
+                    <div class="col">
+                        <h2>Lorem ipsum dolor sit ament.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

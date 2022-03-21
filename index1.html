@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMML TASK 1.4</title>
+
+    <style>
+
+        input {
+            margin-bottom: 5px;
+            border-radius: 1px;
+            border: 1px solid #999;
+        }
+
+        p{
+            margin-bottom: 5px;
+        }
+
+        .user-info label,
+        .checkboxes label {
+            width: 55px;
+            display: inline-block;
+        }
+        
+        .questions>div {
+            margin-bottom: 20px;
+        }
+
+        .message-label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Jūsų informacija</legend>
+            <div class="user-info">
+                <div>
+                    <label for="name">Vardas:</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div>
+                    <label for="lastName">Pavardė:</label>
+                    <input type="text" name="lastName" id="lastName" />
+                </div>
+            </div>
+          </fieldset>
+        
+          <fieldset>
+            <legend>Klausimai</legend>
+                <div class="questions">
+                    <div>
+                        <label for="selection">Kaip sužinojote apie mus?</label>
+                        <select id="selection" name="selection">
+                            <option value="google">Google</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="twitter">Twitter</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Ar apsilankysite vėl?</p>
+                        <label for="yes">Taip</label>
+                        <input type="radio" id="yes" name="radioButton" value="Taip">
+                        <label for="no">Ne</label>
+                        <input type="radio" id="no" name="radioButton" value="Ne">
+                        <label for="maybe">Galbūt</label>
+                        <input type="radio" id="maybe" name="radioButton" value="Galbūt">
+                    </div>
+                    <div>
+                        <label for="message" class="message-label">Ką manote apie kursą?</label>
+                        <textarea name="message" id="message" cols="100" rows="10" placeholder="Rašykite viską ką galvojate"></textarea>
+                    </div>
+                    <div class="checkboxes">
+                        <p>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</p>
+                        <input type="checkbox" id="language1" name="language1" value="C#">
+                        <label for="language1">C#</label>
+                        <input type="checkbox" id="language2" name="language2" value="JAVA">
+                        <label for="language2">JAVA</label>
+                        <input type="checkbox" id="language3" name="language3" value="PHP">
+                        <label for="language3">PHP</label><br/>
+                        <input type="checkbox" id="language4" name="language4" value="HTML">
+                        <label for="language4">HTML</label>
+                        <input type="checkbox" id="language5" name="language5" value="CSS">
+                        <label for="language5">CSS</label>
+                        <input type="checkbox" id="language6" name="language6" value="JavaScript">
+                        <label for="language6">JavaScript</label><br />
+                        <input type="checkbox" id="language7" name="language7" value="Python">
+                        <label for="language7">Python</label>
+                        <input type="checkbox" id="language8" name="language8" value="Ruby">
+                        <label for="language8">Ruby</label>
+                    </div>
+                    <div>
+                        <button type="submit">Siūsti</button>
+                    </div>
+                </div>
+            </fieldset>
+    </form>
+</body>
+</html>

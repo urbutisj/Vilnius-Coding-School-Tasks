@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMML TASK 2.3</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        div.container {
+            max-width: 940px;
+            min-width: 720px;
+            margin: 10px auto 10px auto;
+            padding: 20px;
+            border: 4px double #000;
+            background-color: #ffffff;
+        }
+
+        .logo {
+            width: 150px;
+            margin: 10px auto 25px auto;
+            display: flex;
+        }
+
+        ul {
+            width: 570px;
+            padding: 15px;
+            margin: 0px auto 0px auto;
+            border-top: 2px solid #000;
+            border-bottom: 1px solid #000;
+            display: flex;
+            place-content: space-between;
+        }
+
+        li {
+            display: inline;
+            margin: 0px 3px;
+        }
+
+        a {
+            color: #000000;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        a:hover,
+        a.on {
+            color: #cc3333;
+            background-color: #ffffff;
+        }
+
+        .pictures {
+            margin: 20px 0;
+        }
+
+        .copy {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <img class="logo" src="http://www.htmlandcssbook.com/code-samples/chapter-13/images/logo.gif" alt="The Analog Specialist"/>
+            </div>
+            <div class="row">
+                <ul>
+                    <li><a href="#">Pagrindinis</a></li>
+                    <li><a href="#">Pardavimas</a></li>
+                    <li><a href="#">Remontas</a></li>
+                    <li><a href="#">Apie</a></li>
+                    <li><a href="#">Kontaktai</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="row">
+                <div class="pictures">
+                    <img src="http://www.htmlandcssbook.com/code-samples/chapter-13/images/keys.jpg" /> 
+                </div>
+                <div class="copy">
+                    <p>Mes specializuojamės klasikinių klaviatūrų, ypač "Fender Rhodes", Wurlitzer EP200 ir Hohner Clavinet, pardavimu ir taisymu.</p>
+                </div>
+            </div>
+        </main>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMML TASK 2.3</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .contact-form {
+            background-color: #F2F2F2;
+            max-width: 600px;
+            height: 420px;
+            margin: 0 auto;
+            padding: 10px 40px;
+            position: relative;
+        }
+
+        .contact-form div {
+            display: block;
+        }
+
+        label, input {
+            display: block;
+        }
+
+        .contact-form input {
+            margin: 10px 0;
+            height: 35px;
+            padding-left: 10px;
+            width: 100%;
+            border: 1px solid #DFE0DF;
+            border-radius: 3px;;
+        }
+
+        button[type=submit] {
+            position: absolute;
+            bottom: 30px;
+            padding: 10px 25px;
+            border: 1px solid blue;
+            border-radius: 3px;
+            margin: 0 auto;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="contact-form">
+            <div>
+                <label for="name">Vardas</label>
+                <input type="text" name="name"/>    
+            </div>
+            <div>
+                <label for="surname">Pavardė</label>
+                <input type="text" name="surnmae"/>
+            </div>
+            <div>
+                <label for="email">El. paštas</label>
+                <input type="email" name="email"/>    
+            </div>
+            <div>
+                <label for="phone">Telefonas</label>
+                <input type="number" name="phone"/>
+            </div>
+            <div>
+                <button type="submit">Siųsti</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
